@@ -1,18 +1,24 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <time.h>
+#include <time.h> 
+
+const char CHAR_INPUT_SET[] = "[](){}abcdefghijklmnopqrstuvwxyz ";
+const char STRING_INPUT_SET[] = "abcdefghijklmnopqrstuvwxyz";
 
 char inputChar()
 {
-  // TODO: rewrite this function
-  return ' ';
+  return CHAR_INPUT_SET[rand() % 34];
 }
 
 char *inputString()
 {
-  // TODO: rewrite this function
-  return "";
+  char str[6];
+  int i;
+  for (i = 0; i < 5; i++) {
+    str[i] = CHAR_INPUT_SET[rand() % 27];
+  }
+  return str;
 }
 
 void testme()

@@ -55,8 +55,9 @@ dkms.conf
 .vscode/
 *.code-workspace
 
-# Compiled Files
+# Other Compiled Files
 *.gcda
 *.gcno
+*.gcov
 player
 playdom
